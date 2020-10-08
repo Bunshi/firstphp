@@ -1,7 +1,6 @@
 <?php
-  $str = "文字列１<br />文字列２<br />文字列３<br />";
-    echo $str;
-  $str = str_replace("文字列", "置き換え後", $str,$n);
-    echo $str;
-    echo $n."回置き換えました";
+  $html = '<span class="{class}">Fried Bean Curd<span>
+  <span class="{class}">Oil-Soaked Fish</span>';
+
+  print str_replace('{class}',$my_class,$html);
 ?>
