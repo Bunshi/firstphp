@@ -54,4 +54,10 @@
   printf("%s %d 個で %.0f円 /各%.0f円\n", "シェイク", 1, 1 * $shake, $shake);
   print "<br>";
   printf("%s %d 個で %.0f円 /各%.0f円\n", "コーラ", 1, 1 * $cola, $cola);
+  print "<br>";
+  printf("%25s: %5.0f円\n", '合計金額', $food);
+  print "<br>";
+  printf("%25s: %5.0f円\n", '税込価格', round($food + $tax));
+  print "<br>";
+  printf("%25s: %5.0f円\n", 'チップを含めた税込価格', round($food + $tip + $tax));
 ?>
